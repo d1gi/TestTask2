@@ -1,0 +1,15 @@
+{
+    "name": "digi/test-task2",
+    "authors": [
+        {
+            "name": "digi"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"": "src/"}
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "raulfraile/ladybug": "v0.7"
+    }
+}

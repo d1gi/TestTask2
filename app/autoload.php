@@ -10,4 +10,8 @@ if (version_compare(PHP_VERSION, '5.4', '>=') && gc_enabled()) {
  */
 $loader = require __DIR__.'/../vendor/autoload.php';
 
+\Ladybug\Loader::loadHelpers();
+
+require_once __DIR__.'/AppKernel.php';
+
 return $loader;
