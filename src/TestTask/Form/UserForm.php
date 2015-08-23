@@ -29,7 +29,7 @@ class UserForm
      */
     public function getView()
     {
-
+        return ''; // @todo
     }
 
     /**
@@ -39,6 +39,6 @@ class UserForm
      */
     public function isValid()
     {
-
+        return true; // @todo
     }
 }
