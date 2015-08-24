@@ -20,5 +20,15 @@ class AppKernel
     public function run()
     {
         echo 'hi :)';
+
+        $db = \TestTask\DB::getInstance();
+
+        ld($db); // object(PDO)
+
+        $stmt = $db->query('SELECT * FROM users');
+
+        while ($row = $stmt->fetch()) {
+            ld($row); // object(stdClass) т.к. указано PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ
+        }
     }
 }
