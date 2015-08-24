@@ -30,7 +30,7 @@ class DB
     static public function getInstance()
     {
         if(is_null(self::$instance)) {
-            $dsn = 'mysql:host=127.0.0.1;dbname='.DB_NAME;
+            $dsn = 'mysql:host='.DB_HOST.';dbname='.DB_NAME;
             $opt = [
                 PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
