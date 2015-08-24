@@ -25,7 +25,7 @@ class DB
     protected function __clone() {}
 
     /**
-     * @return null|\PDO
+     * @return PDO
      */
     static public function getInstance()
     {
