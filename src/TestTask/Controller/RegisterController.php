@@ -18,10 +18,12 @@ class RegisterController extends Controller
             $form->bind($_POST);
         }
 
+        return 'Тут будет регистрилка :) это метод: '.__METHOD__;
+
+        /*
         return $this->render('Register/form', [
             'form' => $form->getView(),
         ]);
-
+        */
     }
-
 }

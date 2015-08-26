@@ -9,7 +9,7 @@ class LoginController
      */
     public function formAction()
     {
-
+        return 'Тут будет логинилка :) это метод: '.__METHOD__;
     }
 
     /**
