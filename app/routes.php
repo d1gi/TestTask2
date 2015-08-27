@@ -25,7 +25,7 @@ return [
     'register' => [
         'path' => '/register',
         'controller' => 'TestTask\Controller\RegisterController',
-        'action' => 'showAction',
+        'action' => 'formAction',
         'params' => [],
     ],
 ];
