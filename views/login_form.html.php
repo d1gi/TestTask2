@@ -23,7 +23,7 @@
             margin-bottom: 0px;
         }
     </style>
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
     <script src="/bootstrap3/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         window.alert = function () {

@@ -23,7 +23,7 @@
             margin-bottom: 0px;
         }
     </style>
-    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/js/jquery-2.1.4.min.js"></script>
     <script src="/bootstrap3/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         window.alert = function () {
@@ -66,7 +66,7 @@
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-3 control-label">
-                                Phone</label>
+                                Телефон</label>
 
                             <div class="col-sm-9">
                                 <input type="tel" class="form-control" id="inputPassword3" placeholder="Телефон" required>
