@@ -2,13 +2,19 @@
 
 namespace TestTask\Controller;
 
-class LoginController
+use TestTask\Mvc\Controller;
+
+class LoginController extends Controller
 {
     /**
      * Отобразить форму логина.
      */
     public function formAction()
     {
+        return $this->render('login_form', [
+            //'form' => $form->getView(),
+        ]);
+
         return 'Тут будет логинилка :) это метод: '.__METHOD__;
     }
 

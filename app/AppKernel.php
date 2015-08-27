@@ -32,7 +32,9 @@ class AppKernel
         $response       = null;
 
         if (class_exists($controllerData['controller'])) {
-            $controller = new $controllerData['controller'];
+            $viewsDir = realpath(__DIR__.'/../views');
+
+            $controller = new $controllerData['controller']($viewsDir);
 
             if (method_exists($controller, $controllerData['action'])) {
                 $response = $controller->$controllerData['action']();
